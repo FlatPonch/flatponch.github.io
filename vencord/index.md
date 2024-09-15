@@ -1,17 +1,3 @@
-<head>
-    <style>
-        @import url(https://raw.githubusercontent.com/FlatPonch/website/main/MADEEvolveSansRegular.otf);
-    
-    mark {
-    font-family: 'MADE Evolve Sans Regular', sans-serif;
-    }
-
-    </style>
-</head>
-
-
-<mark>
-
 # Vencord | BetterDiscord
 
 ## Themes  (creds in css file)
@@ -51,5 +37,3 @@ Additionally, make sure not to post screenshots with Vencord in a server where y
 ### Download Vencord(if you read the important)
 
 [here](https://vencord.dev/download)
-
-</mark>
