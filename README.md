@@ -1,11 +1,4 @@
 # flatponch.github.io
 
-### Site Map
+## so i revived this repo...
 
-website:https://flatponch.github.io
-
-database:https://flatponch.github.io/database
-
-discord server:https://flatponch.github.io/discord/
-
-kotiriku server:https://flatponch.github.io/discord/kotiriku

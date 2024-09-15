@@ -1,5 +1,7 @@
+
+
 # FlatPonch's Database
 
-[Images](https://flatponch.xyz/database/images/)
+[Images](https://alt.latponch.xyz/database/images/)
 
-[Fonts](https://flatponch.xyz/database/fonts/)
+[Fonts](https://alt.flatponch.xyz/database/fonts/)
