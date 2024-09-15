@@ -1,10 +1,14 @@
-<style>
-    @import url(https://raw.githubusercontent.com/FlatPonch/website/main/MADEEvolveSansRegular.otf);
-
-    mark{
-        font-family: 'MADE Evolve Sans Regular', sans-serif;
+<head>
+    <style>
+        @import url(https://raw.githubusercontent.com/FlatPonch/website/main/MADEEvolveSansRegular.otf);
+    
+    mark {
+    font-family: 'MADE Evolve Sans Regular', sans-serif;
     }
-</style>
+
+    </style>
+</head>
+
 
 <mark>
 
