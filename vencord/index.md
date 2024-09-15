@@ -2,9 +2,11 @@
 
 ## Themes  (creds in css file)
 
-[Normal ClearVision(based v6.9.0)](https://flatponch.xyz/vencord/ClearVision.v6.FlatPonch.css)
-
-[RABBIT Platoon(from Blue Archive) ClearVision(based v6.9.0)](https://flatponch.xyz/vencord/ClearVision.v6.FlatPonch.css)
+[Normal ClearVision(v6.9.0)](https://flatponch.xyz/vencord/ClearVision.v6.FlatPonch.css)
+[Normal ClearVision With Evolve Sans(v6.9.0)](https://flatponch.xyz/vencord/ClearVision.v6.FlatPonch.Evolve.css)
+[Nothing ClearVision(v6.9.0)](https://flatponch.xyz/vencord/ClearVision.v6.FlatPonch.nothing)
+[Normal ClearVision With OPPO Sans(V6.9.0)](https://flatponch.xyz/vencord/ClearVision.v6.FlatPonch.OPPOSans.css)
+[RABBIT Platoon(from Blue Archive) ClearVision(v6.9.0)](https://flatponch.xyz/vencord/ClearVision.v6.FlatPonch.RABBITplatoon.css)
 
 ## How to install?
 
