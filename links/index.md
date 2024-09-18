@@ -1,15 +1,17 @@
 # Links(Linktree Alternative)
 
-### Bluesky
+## GitHub
 
-[Bluesky](https://bsky.app/profile/flatponch.xyz)
+[github.com/FlatPonch/](https://github.com/FlatPonch)
 
-### Instagram&Threads
+## X / Twitter (Japanese)
 
-[Instagram](https://instagram.com/flatponch)[Threads](https://threads.net/@flatponch)
+<a href="https://twitter.com/x?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @elon4neflat3655</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-### Discord
+## Bluesky
 
-<iframe src="https://discord.com/widget?id=1127921528042954793&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+[https://bsky.app/profile/flatponch.xyz](https://bsky.app/profile/flatponch.xyz)
 
-[Join link if embed doesn't work](https://flatponch.xyz/discord)
+## Instagram&Threads
+
+[https://instagram.com/flatponch](https://instagram.com/flatponch)
