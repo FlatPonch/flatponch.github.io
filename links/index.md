@@ -6,7 +6,7 @@
 
 ## X / Twitter (Japanese)
 
-<a href="https://twitter.com/x?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @elon4neflat3655</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a href="https://twitter.com/OfficialSCHALE?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @OfficialSCHALE</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Bluesky
 
