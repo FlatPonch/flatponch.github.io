@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="/Images/IMG20240226143911.jpg">
+    <meta property="og:description" content="bro are you seeing this on discord or something?">
+    <link rel="icon" type="image/png" href="https://flatponch.xyz/Images/my_blue220421.gif">
+    <title>FlatPonch's Website</title>
+    <style>
+        @font-face {
+            font-family: "HarmonyOS Sans";
+            src: url("https://flatponch.xyz/fonts/HarmonyOS_Sans_Medium.ttf") format("truetype");
+        }
+
+        @keyframes BlurAnimation {
+            0% {
+                transform: scale(0.95);
+                opacity: 0;
+                filter: blur(10px);
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+                filter: blur(0);
+            }
+        }
+
+        body {
+            font-family: "HarmonyOS Sans", sans-serif;
+            margin: 0;
+            padding: 1.5em;
+            display: flex;
+            flex-direction: column;
+            background-color: var(--bg-color, #f5f5f5);
+            transition: background-color 0.3s ease-in-out;
+            animation: BlurAnimation 1s ease-in-out;
+        }
+
+        .hero {
+            background-color: var(--bg-color-secondary, #fff);
+            border-radius: 0.5em;
+            padding: 1.5em;
+            box-shadow: 0 0.3em 0.2em rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 1.5em;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .hero h1 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+            color: var(--text-color);
+        }
+
+        .hero p {
+            color: var(--text-color);
+        }
+
+        .content {
+            text-align: center;
+            line-height: 1.5em;
+            color: var(--text-color);
+            margin: 0 auto;
+        }
+
+        .content img {
+            border-radius: 0.5em;
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.7em;
+            margin-top: 1.5em;
+            margin-bottom: 2em;
+            font-size: 0.9em;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: var(--text-color);
+            padding: 0.4em 0.7em;
+            border: 1px solid var(--border-color, #000);
+            border-radius: 0.5em;
+            margin-right: 0.7em;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .contact a:hover {
+            background-color: var(--text-color, #000);
+            color: var(--bg-color-secondary, #fff);
+        }
+
+        .footer {
+            text-align: center;
+            line-height: 1.5em;
+            color: var(--text-color);
+            margin: 0 auto;
+        }
+
+        .header {
+            position: -webkit-sticky;
+            /* For Safari */
+            position: sticky;
+            top: 0;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            /* For Safari */
+            width: 100%;
+            padding: 1em;
+            z-index: 1000;
+            margin-left: -1.5em;
+            padding-left: 1.5em;
+            margin-right: -1.5em;
+            padding-right: 1.5em;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin: 0;
+            color: var(--text-color);
+        }
+
+        /* Media query for dark mode */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #222;
+                --bg-color-secondary: #333;
+                --text-color: #fff;
+                --border-color: #444;
+            }
+
+            .header {
+                background: rgba(34, 34, 34, 0.8);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>FlatPonch's Website</h1>
+    </div>
+    <div class="hero">
+        <h1>Hi There!</h1>
+        <p>This is a website created with a single HTML file.</p>
+    </div>
+    <div class="content">
+        <p>I love klee(Genshin Impact) and Kasumizawa Miyu(Blue Archive).</p>
+        <a href="https://www.pixiv.net/en/artworks/86325509" target="_blank">
+            <img src="https://flatponch.xyz/Images/kl_genshin201215.gif" alt="Klee(Genshin Impact) Animated Stamp by seseren" width="300" height="300">
+        </a>
+        <a href="https://www.pixiv.net/en/artworks/97787966" target="_blank">
+            <img src="https://flatponch.xyz/Images/my_blue220421.gif" alt="Kasumizawa Miyu(Blue Archive) Animated Stamp by seseren" width="300" height="300">
+        </a>
+        <a href="https://flatponch.xyz/mdtest/" target="_blank">
+            <img src="https://flatponch.xyz/Images/images(10).jpg" alt="Asagi Mutsuki(Blue Archive)" width="300" height="300">
+        </a>
+        <a href="https://www.pixiv.net/en/artworks/100088526" target="_blank">
+            <img src="https://flatponch.xyz/Images/nhd_genshin220729.gif" alt="Nahida(Genshin Impact) Animated Stamp by seseren" width="300" height="300">
+        </a>
+    </div>
+    <div class="contact">
+        <a href="https://youtu.be/BbeeuzU5Qc8" target="_blank">Click Me</a>
+        <a href="https://flatponch.xyz/jp">日本語</a>
+        <a href="https://github.com/FlatPonch/website">This website's Repo</a>
+        <a href="https://alt.flatponch.xyz/database">database</a>
+        <a href="https://linktr.ee/FlatPonch" target="_blank">Linktree</a>
+        <a href="https://alt.flatponch.xyz/links" target="_blank">Links(Linktree Alt)</a>
+        <a href="https://alt.flatponch.xyz/vencord">Vencord themes</a>
+    </div>
+    <div class="footer">
+        <p>2024 FlatPonch
+        <p><a href="https://sora-amagiri.github.io">Sora Amagiri(Sora)</a>(design idea from my friend's website)</p>
+    </div>
+</body>
+
+</html>

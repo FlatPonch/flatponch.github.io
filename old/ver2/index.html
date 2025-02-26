@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FlatPonch's Website">
+  <link rel="icon" type="image/png" href="https://flatponch.xyz/Images/my_blue220421.gif">
+  <title>FlatPonch's Website</title>
+  <style>
+    @font-face {
+    font-family: "HarmonyOS Sans";
+    src: url("https://www.flatponch.xyz/fonts/HarmonyOS_Sans_Regular.ttf") format('truetype');
+    }
+
+    body {
+      font-family:"HarmonyOS Sans", sans-serif;
+      margin: 0;
+      padding: 1.5em;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg-color, #f5f5f5);
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .hero {
+      background-color: var(--bg-color-secondary, #fff);
+      border-radius: 0.5em;
+      padding: 1.5em;
+      box-shadow: 0 0.3em 0.2em rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 1.5em;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      color: var(--text-color);
+    }
+    .hero p {
+      color: var(--text-color);
+    }
+
+    .content {
+      text-align: center;
+      line-height: 1.5em;
+      color: var(--text-color);
+      margin: 0 auto;
+    }
+
+    .content img {
+      border-radius: 0.5em;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: space-between;
+      margin-top: 1.5em;
+      font-size: 0.9em;
+    }
+
+    .contact a {
+      text-decoration: none;
+      color: var(--text-color);
+      padding: 0.4em 0.7em;
+      border: 1px solid var(--border-color, #000);
+      border-radius: 0.5em;
+      margin-right: 0.7em;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .contact a:hover {
+      background-color: var(--text-color, #000);
+      color: var(--bg-color-secondary, #FFF);
+    }
+    
+    .legal {
+      text-align: left;
+    }
+
+    .legal h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      color: var(--text-color);
+    }
+    .legal p {
+      color: var(--text-color);
+    }
+
+    /* Media query for dark mode */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #222;
+        --bg-color-secondary: #333;
+        --text-color: #fff;
+        --border-color: #444;
+      }
+    }
+  </style>
+</head>
+  <body>
+    <div class="hero">
+      <h1>FlatPonch's Website</h1>
+      <p>This is a website created with a single HTML file.</p>
+    </div>
+    <div class="content">
+      <p>I love klee(Genshin Impact) and Kasumizawa Miyu(Blue Archive).</p>
+      <a href="https://www.pixiv.net/en/artworks/86325509" target="_blank">
+        <img src="https://flatponch.xyz/Images/kl_genshin201215.gif" alt="Klee(Genshin Impact) Animated Stamp by seseren" width="300" height="300">
+      </a>
+      <a href="https://www.pixiv.net/en/artworks/97787966" target="_blank">
+      <img src="https://flatponch.xyz/Images/my_blue220421.gif" alt="Kasumizawa Miyu(Blue Archive) Animated Stamp by seseren" width="300" height="300">
+      </a>
+    </div>
+    <div class="contact">
+      <a href="https://youtu.be/BbeeuzU5Qc8" target="_blank">Click Me</a>
+      <a href="https://flatponch.xyz/jp">日本語</a>
+      <a href="https://flatponch.xyz/database">database</a>
+      <a href="https://linktr.ee/FlatPonch" target="_blank">Linktree</a>
+      <a href="https://flatponch.xyz/links" target="_blank">Links(Linktree Alt)</a>
+      <a href="https://flatponch.xyz/vencord">Vencord themes</a>
+    </div>
+      <div class="legal">
+      <p>2024 FlatPonch
+      <p><a href="https://kosasho.github.io">Kosasho</a>(design idea from my friend's website)</p>
+    </div>
+  </body>
+</html>
