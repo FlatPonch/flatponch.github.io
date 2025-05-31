@@ -1,17 +1,11 @@
-# Links(Linktree Alternative)
+# FlatPonch's some Links
 
-## GitHub
+[GitHub](https://github.com/FlatPonch)
 
-[github.com/FlatPonch/](https://github.com/FlatPonch)
+[Bluesky](https://bsky.app/profile/flatponch.xyz)
 
-## Bluesky
+[Instagram](https://instagram.com/flatponch)
 
-[https://bsky.app/profile/flatponch.xyz](https://bsky.app/profile/flatponch.xyz)
+[YouTube](https://youtube.com/@FlatPonch)
 
-## Instagram&Threads
-
-[https://instagram.com/flatponch](https://instagram.com/flatponch)
-
-## YouTube
-
-[https://youtube.com/@FlatPonch](https://youtube.com/@FlatPonch)
+[Steam](https://steamcommunity.com/id/FlatPonch)
