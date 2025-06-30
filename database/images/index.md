@@ -2,7 +2,7 @@
 
 ## Images
 
-![long tongue man](https://flatponch.xyz/Images/longtongueman.jpg)
+![long tongue man](https://flatponch.xyz/Images/longtongueman.webp)
 
 ## Videos
 Beaver A better Tommorow with Simplified Chinese(aka Chinese Beaver meme)
