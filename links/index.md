@@ -1,5 +1,7 @@
 # FlatPonch's some Links
 
+[Self Promotion: monochrome, Project.](https://mncrp.thinking-grp.org)
+
 [GitHub](https://github.com/FlatPonch)
 
 [Bluesky](https://bsky.app/profile/flatponch.xyz)

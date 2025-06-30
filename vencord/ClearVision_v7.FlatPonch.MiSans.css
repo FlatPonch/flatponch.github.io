@@ -1,18 +1,20 @@
 /**
- * @name FlatPonch's ClearVision(Nothing)
+ * @name FlatPonch's ClearVision (MiSans)
  * @author FlatPonch
  * @version 6.9.0
- * @source https://github.com/ClearVision/ClearVision-v6
+ * @description Ultimate Customizable Theme for BD|VC
+ * @source https://github.com/ClearVision/ClearVision-v7
  * @website https://flatponch.xyz
+ * @invite zXM7v6gU2j
  */
 
 /* IMPORT CSS */
-@import url(https://clearvision.github.io/ClearVision-v6/main.css);
+@import url(https://clearvision.github.io/ClearVision-v7/main.css);
 
 /* IMPORT FONTS(for main font) */
 @font-face {
-  font-family:"Ndot";
-  src: url(https://memo.shibadogcap.com/Ndot77JPExtended.woff2) format(woff2);
+  font-family:"MiSans";
+  src: url(https://www.flatponch.xyz/fonts/MiSans-Regular.ttf) format(truetype);
 }
 
 /* SETTINGS */
@@ -32,7 +34,7 @@
   --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
 
   /* GENERAL */
-  --main-font: Ndot, sans-serif; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
+  --main-font: MiSans, Koruri, Jigmo, sans-serif; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
   --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
   --text-normal: rgb(220, 221, 222); /* color of default discord text */
   --text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
@@ -42,7 +44,7 @@
   /* APP BACKGROUND */
   --background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
   --background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
-  --background-image: url(hogehoge); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)] */
+  --background-image: url(https://flatponch.xyz/Images/bliss.webp); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)] */
   --background-position: center; /* app background position [default: center] */
   --background-size: cover; /* app background size [default: cover] */
   --background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
