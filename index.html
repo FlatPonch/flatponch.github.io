@@ -25,8 +25,10 @@
             margin: 0;
             padding: 0;
             background-color: var(--bg-color);
-            background-image: url("https://raw.githubusercontent.com/FlatPonch/flatponch.github.io/main/Images/bliss.webp");
-            background-size: auto;
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* Added dark overlay */
+                url("https://raw.githubusercontent.com/FlatPonch/flatponch.github.io/main/Images/bliss.webp");
+            background-size: cover; /* Changed from auto to cover */
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
@@ -47,7 +49,7 @@
         .header {
             position: sticky;
             top: 0;
-            background-color: rgba(var(--bg-color), 0.8);
+            background-color: rgba(var(--bg-color), 0.8); /* Note: This rgba with var might not work as expected with hex color */
             backdrop-filter: blur(10px);
             z-index: 1000;
             padding: 0.5em 0;
@@ -124,7 +126,9 @@
             /* Media query for vertical orientation */
         @media (orientation: portrait) {
             body {
-                background-image: url("https://raw.githubusercontent.com/FlatPonch/flatponch.github.io/main/Images/vertical.webp"); /* Replace with the URL of your vertical image */
+                background-image:
+                    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* Added dark overlay */
+                    url("https://raw.githubusercontent.com/FlatPonch/flatponch.github.io/main/Images/vertical.webp"); /* Replace with the URL of your vertical image */
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
