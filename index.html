@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="FlatPonch's Website">
-    <meta property="og:image" content="https://raw.githubusercontent.com/FlatPonch/flatponch.github.io/main/Images/IMG20240226143911.jpg">
+    <meta property="og:image" content="https://raw.githubusercontent.com/FlatPonch/flatponch.github.io/main/Images/IMG20240226143911.webp">
     <meta property="og:description" content="bro are you seeing this on discord or something?">
     <link rel="icon" type="image/png" href="./Images/my_blue220421.gif">
     <title>FlatPonch's Website</title>
@@ -27,6 +27,9 @@
             background-color: var(--bg-color);
             background-image: url("https://raw.githubusercontent.com/FlatPonch/flatponch.github.io/main/Images/bliss.webp");
             background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
             color: var(--text-color);
             transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
             line-height: 1.6;
@@ -117,6 +120,18 @@
         .fade-in {
             animation: fadeIn 1s ease-out;
         }
+
+            /* Media query for vertical orientation */
+        @media (orientation: portrait) {
+            body {
+                background-image: url("https://raw.githubusercontent.com/FlatPonch/flatponch.github.io/main/Images/vertical.webp"); /* Replace with the URL of your vertical image */
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed;
+                /* You might also adjust background-overlay or other properties if needed */
+            }
+        }
     </style>
 </head>
 <body>
@@ -138,10 +153,9 @@
         <section class="content fade-in">
             <p>
                 I'm Playing <a href="https://www.nexon.com/main/en/Blue%20Archive/">Blue Archive</a>, 
-                <a href="https://playdeltaforce.com">Delta Force</a>, 
-                Black Ops 6 
-                and Zenless Zone Zero.(my main platform is PC and PS5.)<br>
-                I love to use Realme phone.
+                <a href="https://playdeltaforce.com">Delta Force</a>, and
+                <a href="https://zzz.hoyoverse.com">Zenless Zone Zero</a>.(my main platform is PC and PS5.)<br>
+                I'm using Realme GT Neo5 SE and iPhone Xs.
             </p>
         </section>
         <br>
@@ -149,7 +163,7 @@
 
         <nav class="contact fade-in">
             <a href="jp/index.html">日本語(日本の方はこちら)</a>
-            <a href="https://github.com/FlatPonch/website" target="_blank">This website's Repo</a>
+            <a href="https://github.com/FlatPonch/flatponch.github.io" target="_blank">This website's Repo</a>
             <a href="https://flatponch.xyz/database">database</a>
             <a href="https://flatponch.xyz/links">Links</a>
             <a href="https://flatponch.xyz/contact">Contacts</a>
@@ -161,7 +175,7 @@
             <p>2025 FlatPonch</p>
                 <p>Credits: <a href="https://amafuka.com/">Sora Amagiri(Sora)</a>(design idea from my friend's website)</p>
                 <p><a href="old/index.html">Go back to old design of my website design</a></p>
-                <p>Horizontal Background Image:Blue Archive(NEXON Games)</p>
+                <p>please turn off the dark reader for better experience :|</p>
         </div>
     </footer>
 </body>
