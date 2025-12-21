@@ -1,0 +1,309 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="FlatPonch's Website">
+        <meta property="og:image" content="https://raw.githubusercontent.com/FlatPonch/flatponch.github.io/main/Images/IMG20240226143911.webp">
+        <meta property="og:description" content="bro are you seeing this on discord or something?">
+        <link rel="icon" type="image/png" href="./Images/my_blue220421.gif">
+        <title>FlatPonch | Profile</title>
+    <style>
+        /* --- IMPORT LEXEND --- */
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+        /* --- CSS VARIABLES --- */
+        :root {
+            --bg-color: #0f111a;
+            --card-bg: rgba(26, 28, 41, 0.8);
+            --text-main: #e6e6e6;
+            --text-muted: #8f93a2;
+            --accent: #89ddff;
+            --accent-sec: #c792ea;
+            --border: #292d3e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: 
+                linear-gradient(rgba(15, 17, 26, 0.95), rgba(15, 17, 26, 0.95)),
+                url("https://raw.githubusercontent.com/FlatPonch/flatponch.github.io/main/Images/bliss.webp");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: var(--text-main);
+            font-family: "Lexend", sans-serif;
+            line-height: 1.6;
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        /* --- HEADER --- */
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, var(--accent), var(--accent-sec));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bio {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* --- GRID LAYOUT --- */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+            color: var(--accent);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* --- VERTICAL GAME GRID STYLES --- */
+        .game-grid {
+            display: grid;
+            /* Creates dynamic columns based on width (min 130px wide) */
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 15px;
+        }
+
+        .game-item {
+            position: relative;
+            display: block;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, border-color 0.2s;
+            /* 2/3 Ratio = Vertical Poster/Card Style */
+            aspect-ratio: 2/3; 
+        }
+
+        .game-item:hover {
+            transform: scale(1.03);
+            border-color: var(--accent-sec);
+            z-index: 2;
+        }
+
+        .game-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        
+        /* Slight zoom on hover for the image */
+        .game-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .game-item .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(15, 17, 26, 0.85); /* Darker background for readability */
+            color: #fff;
+            font-size: 0.7rem;
+            text-align: center;
+            padding: 6px 4px;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: all 0.2s ease;
+        }
+
+        .game-item:hover .caption {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- BUTTON LINKS --- */
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background-color: transparent;
+            color: var(--text-main);
+            padding: 0.6rem 1.2rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent);
+            color: var(--bg-color);
+            border-color: var(--accent);
+            box-shadow: 0 0 15px rgba(137, 221, 255, 0.3);
+        }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            padding-top: 2rem;
+            width: 100%;
+        }
+
+        footer a { color: var(--text-muted); }
+        footer a:hover { color: var(--accent); }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>FlatPonch</h1>
+            <p class="bio">Welcome to my website :3</p>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">
+                Personal projects, interests, and chaos.
+            </p>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Currently Playing</h3>
+                <div class="game-grid">
+                    <a href="https://www.nexon.com/main/en/Blue%20Archive/" class="game-item">
+                        <img src="https://shared.steamstatic.com/store_item_assets/steam/apps/3557620/56639673818079bf966c8bec85d7c3b26baced24/library_600x900_2x.jpg?t=1752113872" alt="Blue Archive">
+                        <div class="caption">Blue Archive</div>
+                    </a>
+                    
+                    <a href="https://stellasora.global/" class="game-item">
+                        <img src="https://cdn2.steamgriddb.com/grid/4452b81286d2048e3729bb5717746fbe.png" alt="Stella Sora">
+                        <div class="caption">Stella Sora</div>
+                    </a>
+
+                    <a href="https://zenless.hoyoverse.com" class="game-item">
+                        <img src="https://cdn2.steamgriddb.com/grid/73c540124a1a575eb12dc9918f85a6be.png" alt="Zenless Zone Zero">
+                        <div class="caption">Zenless Zone Zero</div>
+                    </a>
+
+                    <a href="https://playdeltaforce.com" class="game-item">
+                        <img src="https://shared.steamstatic.com/store_item_assets/steam/apps/2507950/762eed0d9b5da21438051c1015a07ae7ffe57502/library_capsule_2x.jpg?t=1762497113" alt="Delta Force">
+                        <div class="caption">Delta Force (Mobile)</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>My Devices</h3>
+                <ul>
+                    <li>
+                        <strong style="color: var(--text-main);">Samsung Galaxy S25 Ultra</strong><br>
+                        <span style="font-size: 0.85rem;">Main Device</span>
+                    </li>
+                    <li>
+                        <strong style="color: var(--text-main);">Pixel 6a</strong><br>
+                        <span style="font-size: 0.85rem;">GrapheneOS (Privacy)</span>
+                    </li>
+                    <li>
+                        <strong style="color: var(--text-main);">iPhone XS</strong><br>
+                        <span style="font-size: 0.85rem;">for Apps that Exclusive on iOS</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="../index.html" class="btn">🇬🇧 English</a>
+            <a href="https://flatponch.xyz/database" class="btn">Database</a>
+            <a href="https://flatponch.xyz/links" class="btn">Links</a>
+            <a href="https://flatponch.xyz/contact" class="btn">Contact</a>
+            <a href="https://github.com/FlatPonch/flatponch.github.io" target="_blank" class="btn">GitHub Repo</a>
+        </nav>
+
+        <footer>
+            <p>© 2026 FlatPonch All Rights Reserved.</p>
+            <p><a href="https://amafuka.com/">Sora Amagiri</a> (デザインの参考)</p>
+            <p><a href="old/index.html">旧デザインを見る</a></p>
+            <p>より良い体験のために、Dark Readerをオフにしてね (눈_눈)</p>
+            <br>
+            <p>ほとんどのコードは<a href="https://gemini.google.com/">Google Gemini</a>によって生成されました。</p>
+        </footer>
+    </div>
+    <!--
+   ____                 _ _                  ____   ___ ____  ____  
+  / ___| ___   ___   __| | |__  _   _  ___  |___ \ / _ \___ \| ___| 
+ | |  _ / _ \ / _ \ / _` | '_ \| | | |/ _ \   __) | | | |__) |___ \ 
+ | |_| | (_) | (_) | (_| | |_) | |_| |  __/  / __/| |_| / __/ ___) |
+  \____|\___/ \___/ \__,_|_.__/ \__, |\___| |_____|\___/_____|____/ 
+                                |___/                               
+
+     _   _      _ _           ____   ___ ____   __   
+    | | | | ___| | | ___     |___ \ / _ \___ \ / /_  
+    | |_| |/ _ \ | |/ _ \      __) | | | |__) | '_ \ 
+    |  _  |  __/ | | (_) |    / __/| |_| / __/| (_) |
+    |_| |_|\___|_|_|\___/    |_____|\___/_____|\___/
+    
+    2026年もよろしくお願いします! by FlatPonch 
+    -->
+
+</body>
+</html>
