@@ -1,25 +1,24 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="FlatPonch's Website">
-        <meta property="og:image" content="https://raw.githubusercontent.com/FlatPonch/flatponch.github.io/main/Images/IMG20240226143911.webp">
-        <meta property="og:description" content="bro are you seeing this on discord or something?">
-        <link rel="icon" type="image/png" href="./Images/my_blue220421.gif">
-        <title>FlatPonch | Profile</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="FlatPonch's Website">
+    <meta property="og:image" content="https://raw.githubusercontent.com/FlatPonch/flatponch.github.io/main/Images/IMG20240226143911.webp">
+    <meta property="og:description" content="bro are you seeing this on discord or something?">
+    <link rel="icon" type="image/png" href="./Images/my_blue220421.gif">
+    <title>FlatPonch | Profile</title>
     <style>
-        /* --- IMPORT LEXEND --- */
-        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-
-        /* --- CSS VARIABLES --- */
+        /* --- IMPORT POPPINS --- */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        /* --- CSS VARIABLES (Updated for Dark Card Theme) --- */
         :root {
             --bg-color: #0f111a;
-            --card-bg: rgba(26, 28, 41, 0.8);
-            --text-main: #e6e6e6;
-            --text-muted: #8f93a2;
-            --accent: #89ddff;
-            --accent-sec: #c792ea;
-            --border: #292d3e;
+            --card-bg: rgba(23, 27, 39, 0.9); /* Darker, higher opacity for readability */
+            --text-main: #ffffff;
+            --text-sub: #b0b3c0;     /* Grey for descriptions */
+            --accent-title: #89ddff; /* Cyan for Headers */
+            --border-color: #2e3240;
         }
 
         * {
@@ -28,27 +27,39 @@
             padding: 0;
         }
 
-        body {
+        /* --- FIXED BACKGROUND (Fixes Landscape/iOS bugs) --- */
+        .bg-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
             background-color: var(--bg-color);
             background-image: 
-                linear-gradient(rgba(15, 17, 26, 0.95), rgba(15, 17, 26, 0.95)),
+                linear-gradient(rgba(10, 10, 15, 0.85), rgba(10, 10, 15, 0.85)),
                 url("https://raw.githubusercontent.com/FlatPonch/flatponch.github.io/main/Images/bliss.webp");
             background-size: cover;
-            background-attachment: fixed;
             background-position: center;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
             color: var(--text-main);
-            font-family: "Lexend", sans-serif;
             line-height: 1.6;
-            padding: 2rem;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 2rem 1rem;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex: 1; /* Ensures footer pushes down */
         }
 
         /* --- HEADER --- */
@@ -62,63 +73,58 @@
             font-size: clamp(2rem, 5vw, 3rem);
             font-weight: 700;
             margin-bottom: 0.5rem;
-            background: linear-gradient(90deg, var(--accent), var(--accent-sec));
+            background: linear-gradient(90deg, var(--accent-title), #c792ea);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .bio {
-            color: var(--text-muted);
+            color: var(--text-sub);
             font-size: 1.1rem;
         }
-
         /* --- GRID LAYOUT --- */
-        .grid {
+        .main-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
+            /* Creates two distinct columns */
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
             margin-bottom: 3rem;
+            align-items: start;
         }
 
+        /* Wrapper to stack Daily Drivers + Gallery vertically */
+        .stack-col {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        /* --- CARD STYLE --- */
         .card {
             background-color: var(--card-bg);
-            border: 1px solid var(--border);
+            border: 1px solid var(--border-color);
             border-radius: 12px;
             padding: 1.5rem;
             backdrop-filter: blur(10px);
-            transition: transform 0.2s ease, border-color 0.2s ease;
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
             animation: slideUp 0.8s ease-out;
         }
 
-        .card:hover {
-            transform: translateY(-4px);
-            border-color: var(--accent);
-        }
-
         .card h3 {
+            color: var(--accent-title);
+            font-size: 1.3rem;
+            font-weight: 700;
             margin-bottom: 1rem;
-            font-size: 1.25rem;
-            border-bottom: 1px solid var(--border);
+            border-bottom: 1px solid var(--border-color);
             padding-bottom: 0.5rem;
-            color: var(--accent);
         }
 
-        ul {
-            list-style: none;
-        }
-
-        li {
-            margin-bottom: 0.75rem;
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        /* --- VERTICAL GAME GRID STYLES --- */
+        /* --- GAME GRID (2x2 Exactly like Screenshot) --- */
         .game-grid {
             display: grid;
-            /* Creates dynamic columns based on width (min 130px wide) */
-            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-            gap: 15px;
+            grid-template-columns: 1fr 1fr; /* Forced 2 columns */
+            gap: 12px;
         }
 
         .game-item {
@@ -126,14 +132,14 @@
             display: block;
             border-radius: 8px;
             overflow: hidden;
-            border: 1px solid var(--border);
+            border: 1px solid var(--border-color);
             transition: transform 0.2s, border-color 0.2s;
             aspect-ratio: 2/3; 
         }
 
         .game-item:hover {
             transform: scale(1.03);
-            border-color: var(--accent-sec);
+            border-color: var(--accent-title);
             z-index: 2;
         }
 
@@ -142,48 +148,75 @@
             height: 100%;
             object-fit: cover;
             display: block;
-            transition: transform 0.3s ease;
-        }
-        
-        /* Slight zoom on hover for the image */
-        .game-item:hover img {
-            transform: scale(1.1);
         }
 
-        .game-item .caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
+        /* --- DAILY DRIVERS LIST (Styled like Screenshot) --- */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 1.25rem;
+        }
+
+        /* Style for the Hardware Name (S25 Ultra, etc) */
+        li strong {
+            display: block;
+            color: var(--text-main);
+            font-size: 1.05rem;
+            margin-bottom: 2px;
+        }
+
+        /* Style for the Description (Main Device, etc) */
+        li span {
+            display: block;
+            color: var(--text-sub);
+            font-size: 0.85rem;
+        }
+
+        /* --- GALLERY GRID --- */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .gallery-item {
+            display: block;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            aspect-ratio: 16/9;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            border-color: var(--accent-title);
+            transform: scale(1.02);
+        }
+
+        .gallery-item img {
             width: 100%;
-            background: rgba(15, 17, 26, 0.85); /* Darker background for readability */
-            color: #fff;
-            font-size: 0.7rem;
-            text-align: center;
-            padding: 6px 4px;
-            opacity: 0;
-            transform: translateY(100%);
-            transition: all 0.2s ease;
+            height: 100%;
+            object-fit: cover;
         }
 
-        .game-item:hover .caption {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* --- BUTTON LINKS --- */
+        /* --- NAVIGATION --- */
         .nav-links {
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
             justify-content: center;
-            margin-bottom: 2rem;
+            margin: 2rem 0;
         }
 
         .btn {
-            background-color: transparent;
+            background-color: rgba(0,0,0,0.2);
             color: var(--text-main);
             padding: 0.6rem 1.2rem;
-            border: 1px solid var(--border);
+            border: 1px solid var(--border-color);
             border-radius: 8px;
             text-decoration: none;
             font-size: 0.9rem;
@@ -191,84 +224,89 @@
         }
 
         .btn:hover {
-            background-color: var(--accent);
-            color: var(--bg-color);
-            border-color: var(--accent);
+            background-color: var(--accent-title);
+            color: #0f111a; /* Dark text on hover */
+            border-color: var(--accent-title);
             box-shadow: 0 0 15px rgba(137, 221, 255, 0.3);
         }
 
+        /* --- FOOTER --- */
         footer {
             margin-top: auto;
             text-align: center;
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: var(--text-sub);
+            border-top: 1px solid var(--border-color);
             padding-top: 2rem;
             width: 100%;
         }
 
-        footer a { color: var(--text-muted); }
-        footer a:hover { color: var(--accent); }
+        footer a { color: var(--text-sub); text-decoration: none; border-bottom: 1px dotted var(--text-sub); }
+        footer a:hover { color: var(--accent-title); border-bottom-style: solid; }
 
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Mobile Fixes */
+        @media (max-width: 700px) {
+            .main-grid { grid-template-columns: 1fr; } /* Stack on mobile */
+        }
     </style>
 </head>
 <body>
 
+    <div class="bg-fixed"></div>
+
     <div class="container">
         <header>
             <h1>FlatPonch</h1>
-            <p class="bio">Welcome to my website :3</p>
-            <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">
-                Personal projects, interests, and chaos.
+            
+            <p class="bio">
+                Welcome :3<br>
+                Web, Mobile and Anime otaku. <br>
+                Please turn off the dark reader for better experience >:|
             </p>
         </header>
 
-        <div class="grid">
+        <div class="main-grid">
             <div class="card">
                 <h3>Currently Playing</h3>
                 <div class="game-grid">
                     <a href="https://www.nexon.com/main/en/Blue%20Archive/" class="game-item">
-                        <img src="https://shared.steamstatic.com/store_item_assets/steam/apps/3557620/56639673818079bf966c8bec85d7c3b26baced24/library_600x900_2x.jpg?t=1752113872" alt="Blue Archive">
-                        <div class="caption">Blue Archive</div>
+                        <img src="../Images/Game/blue_archive.webp" alt="Blue Archive">
                     </a>
                     
                     <a href="https://stellasora.global/" class="game-item">
-                        <img src="https://cdn2.steamgriddb.com/grid/4452b81286d2048e3729bb5717746fbe.png" alt="Stella Sora">
-                        <div class="caption">Stella Sora</div>
+                        <img src="../Images/Game/stella_sora.webp" alt="Stella Sora">
                     </a>
 
                     <a href="https://zenless.hoyoverse.com" class="game-item">
-                        <img src="https://cdn2.steamgriddb.com/grid/73c540124a1a575eb12dc9918f85a6be.png" alt="Zenless Zone Zero">
-                        <div class="caption">Zenless Zone Zero</div>
+                        <img src="../Images/Game/zzz.webp" alt="Zenless Zone Zero">
                     </a>
-
-                    <a href="https://playdeltaforce.com" class="game-item">
-                        <img src="https://shared.steamstatic.com/store_item_assets/steam/apps/2507950/762eed0d9b5da21438051c1015a07ae7ffe57502/library_capsule_2x.jpg?t=1762497113" alt="Delta Force">
-                        <div class="caption">Delta Force (Mobile)</div>
+                    <a href="https://genshin.hoyoverse.com" class="game-item">
+                        <img src="../Images/Game/genshin_impact.webp" alt="Genshin Impact">
                     </a>
                 </div>
             </div>
-
-            <div class="card">
-                <h3>Daily Drivers</h3>
-                <ul>
-                    <li>
-                        <strong style="color: var(--text-main);">Samsung Galaxy S25 Ultra</strong><br>
-                        <span style="font-size: 0.85rem;">Main Device</span>
-                    </li>
-                    <li>
-                        <strong style="color: var(--text-main);">Pixel 6a</strong><br>
-                        <span style="font-size: 0.85rem;">GrapheneOS (Privacy)</span>
-                    </li>
-                    <li>
-                        <strong style="color: var(--text-main);">iPhone XS</strong><br>
-                        <span style="font-size: 0.85rem;">for Apps that Exclusive on iOS</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
+            <div class="stack-col">
+                
+                <div class="card">
+                    <h3>Daily Drivers</h3>
+                    <ul>
+                        <li>
+                            <strong>Samsung Galaxy S25 Ultra</strong>
+                            <span>Main Device</span>
+                        </li>
+                        <li>
+                            <strong>Pixel 6a</strong>
+                            <span>GrapheneOS (Privacy)</span>
+                        </li>
+                        <li>
+                            <strong>iPhone XS</strong>
+                            <span>for Apps that Exclusive on iOS</span>
+                        </li>
+                    </ul>
+                </div>
 
         <nav class="nav-links">
             <a href="./jp/index.html" class="btn">🇯🇵 日本語</a>
@@ -286,7 +324,8 @@
             <p>some codes are generated by <a href="https://gemini.google.com">Google Gemini</a></p>
         </footer>
     </div>
-    <!--
+    </body>
+        <!--
    ____                 _ _                  ____   ___ ____  ____  
   / ___| ___   ___   __| | |__  _   _  ___  |___ \ / _ \___ \| ___| 
  | |  _ / _ \ / _ \ / _` | '_ \| | | |/ _ \   __) | | | |__) |___ \ 
@@ -301,6 +340,4 @@
     |_| |_|\___|_|_|\___/    |_____|\___/_____|\___/
     
     2026年もよろしくお願いします! by FlatPonch 
-    -->
-</body>
-</html>
+    --></html>
