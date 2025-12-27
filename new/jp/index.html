@@ -167,7 +167,7 @@
             font-size: 0.85rem;
         }
 
-        /* --- GALLERY GRID (ADDED) --- */
+        /* --- GALLERY GRID --- */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -239,7 +239,6 @@
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
-        /* --- MOBILE LAYOUT --- */
         @media (max-width: 700px) {
             .main-grid { grid-template-columns: 1fr; }
         }
@@ -267,7 +266,7 @@
                         <img src="../Images/Game/blue_archive.webp" alt="Blue Archive">
                     </a>
                     
-                    <a href="https://stellasora.jp/" class="game-item">
+                    <a href="https://stellasora.global/" class="game-item">
                         <img src="../Images/Game/stella_sora.webp" alt="Stella Sora">
                     </a>
 
@@ -291,52 +290,62 @@
                         </li>
                         <li>
                             <strong>Pixel 6a</strong>
-                            <span>Stock (SUSFSカーネル + KSUNext), GSIのテスト, Android 16</span>
+                            <span>Stock (SUSFS Kernel + KSUNext), GSI test Android 16</span>
                         </li>
                         <li>
                             <strong>iPhone XS</strong>
-                            <span>iOS専用アプリ用, iOS18(未脱獄)</span>
+                            <span>iOS専用アプリ用, iOS18(non-jailbroken)</span>
                         </li>
                     </ul>
                 </div>
 
                 <div class="card">
-                    <h3>ギャラリー (クリックで拡大)</h3>
+                    <h3>ギャラリー (クリックして展開)</h3>
                     <div class="gallery-grid">
                         <div class="gallery-item">
-                            <img src="../Images/photo1.webp" alt="Gallery 1">
+                            <a href="../Images/Gallery/1.webp" target="_blank">
+                                <img src="../Images/Gallery/1_Compressed.webp" alt="Gallery 1">
+                            </a>
                         </div>
                         <div class="gallery-item">
-                            <img src="../Images/photo2.webp" alt="Gallery 2">
+                            <a href="../Images/Gallery/2.webp" target="_blank">
+                                <img src="../Images/Gallery/2_Compressed.webp" alt="Gallery 2">
+                            </a>
                         </div>
                         <div class="gallery-item">
-                            <img src="../Images/photo3.webp" alt="Gallery 3">
+                            <a href="../Images/Gallery/3.webp" target="_blank">
+                                <img src="../Images/Gallery/3_Compressed.webp" alt="Gallery 3">
+                            </a>
                         </div>
                         <div class="gallery-item">
-                            <img src="../Images/photo4.webp" alt="Gallery 4">
+                            <a href="../Images/Gallery/4.webp" target="_blank">
+                                <img src="../Images/Gallery/4_Compressed.webp" alt="Gallery 4">
+                            </a>
                         </div>
                     </div>
                 </div>
 
-            </div> </div> 
-            
-            <nav class="nav-links">
-                <a href="../index.html" class="btn">🇬🇧 English</a>
-                <a href="https://flatponch.xyz/database" class="btn">Database</a>
-                <a href="https://flatponch.xyz/links" class="btn">Links</a>
-                <a href="https://flatponch.xyz/contact" class="btn">Contact</a>
-                <a href="https://github.com/FlatPonch/flatponch.github.io" target="_blank" class="btn">GitHub Repo</a>
-            </nav>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="../index.html" class="btn">🇬🇧 English</a>
+            <a href="https://flatponch.xyz/database" class="btn">Database</a>
+            <a href="https://flatponch.xyz/links" class="btn">Links</a>
+            <a href="https://flatponch.xyz/contact" class="btn">Contact</a>
+            <a href="https://github.com/FlatPonch/flatponch.github.io" target="_blank" class="btn">GitHub Repo</a>
+        </nav>
 
         <footer>
             <p>© 2026 FlatPonch All Rights Reserved.</p>
             <p>Credits: <a href="https://amafuka.com/">Sora Amagiri</a> (Design Inspiration)</p>
             <p><a href="../old/index.html">旧デザインに戻る</a></p>
             <br>
-            <p>ほとんどのコードは<a href="https://gemini.google.com">Google Gemini</a>によって生成されています。</p>
+            <p>some codes are generated by <a href="https://gemini.google.com">Google Gemini</a></p>
         </footer>
     </div>
-</body>
+
+    </body>
 <!--
    ____                 _ _                  ____   ___ ____  ____  
   / ___| ___   ___   __| | |__  _   _  ___  |___ \ / _ \___ \| ___| 
