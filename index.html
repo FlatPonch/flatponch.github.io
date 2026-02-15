@@ -1,18 +1,20 @@
 <!-- v6(Released in Jan 1, 2026) -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="FlatPonch's Website">
-    <meta property="og:image" content="https://raw.githubusercontent.com/FlatPonch/flatponch.github.io/main/Images/IMG20240226143911.webp">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/FlatPonch/flatponch.github.io/main/Images/IMG20240226143911.webp">
     <meta property="og:description" content="bro are you seeing this on discord or something?">
     <link rel="icon" type="image/png" href="./Images/my_blue220421.gif">
     <title>FlatPonch | Profile</title>
     <style>
         /* --- IMPORT POPPINS --- */
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-        
+
         /* --- CSS VARIABLES --- */
         :root {
             --bg-color: #0f111a;
@@ -38,7 +40,7 @@
             height: 100%;
             z-index: -1;
             background-color: var(--bg-color);
-            background-image: 
+            background-image:
                 linear-gradient(rgba(10, 10, 15, 0.85), rgba(10, 10, 15, 0.85)),
                 url("https://raw.githubusercontent.com/FlatPonch/flatponch.github.io/main/Images/bliss.webp");
             background-size: cover;
@@ -108,7 +110,7 @@
             padding: 1.5rem;
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
             animation: slideUp 0.8s ease-out;
         }
 
@@ -135,7 +137,7 @@
             overflow: hidden;
             border: 1px solid var(--border-color);
             transition: transform 0.2s, border-color 0.2s;
-            aspect-ratio: 2/3; 
+            aspect-ratio: 2/3;
         }
 
         .game-item:hover {
@@ -152,8 +154,14 @@
         }
 
         /* --- DAILY DRIVERS LIST --- */
-        ul { list-style: none; padding: 0; }
-        li { margin-bottom: 1.25rem; }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 1.25rem;
+        }
 
         li strong {
             display: block;
@@ -206,7 +214,7 @@
         }
 
         .btn {
-            background-color: rgba(0,0,0,0.2);
+            background-color: rgba(0, 0, 0, 0.2);
             color: var(--text-main);
             padding: 0.6rem 1.2rem;
             border: 1px solid var(--border-color);
@@ -234,21 +242,49 @@
             width: 100%;
         }
 
-        footer a { color: var(--text-sub); text-decoration: none; border-bottom: 1px dotted var(--text-sub); }
-        footer a:hover { color: var(--accent-title); border-bottom-style: solid; }
+        footer a {
+            color: var(--text-sub);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--text-sub);
+        }
 
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        footer a:hover {
+            color: var(--accent-title);
+            border-bottom-style: solid;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
         @media (max-width: 700px) {
-            .main-grid { grid-template-columns: 1fr; }
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
+
 <body>
-
     <div class="bg-fixed"></div>
-
     <div class="container">
         <header>
             <h1>FlatPonch</h1>
@@ -258,7 +294,6 @@
                 Please turn off the dark reader for better experience >:|
             </p>
         </header>
-
         <div class="main-grid">
             <div class="card">
                 <h3>Currently Playing</h3>
@@ -266,40 +301,50 @@
                     <a href="https://www.nexon.com/main/en/Blue%20Archive/" class="game-item">
                         <img src="../Images/Game/blue_archive.webp" alt="Blue Archive">
                     </a>
-                    
-                    <a href="https://stellasora.global/" class="game-item">
-                        <img src="../Images/Game/stella_sora.webp" alt="Stella Sora">
+                    <a href="https://endfield.gryphline.com/" class="game-item">
+                        <img src="../Images/Game/Endfield.webp" alt="Arknights:Endfield">
                     </a>
-
                     <a href="https://zenless.hoyoverse.com" class="game-item">
                         <img src="../Images/Game/zzz.webp" alt="Zenless Zone Zero">
                     </a>
-                    
                     <a href="https://genshin.hoyoverse.com" class="game-item">
                         <img src="../Images/Game/genshin_impact.webp" alt="Genshin Impact">
                     </a>
                 </div>
             </div>
-
             <div class="stack-col">
                 <div class="card">
-                    <h3>Daily Drivers</h3>
+                    <h3>Daily Drivers (Usage, Version)</h3>
                     <ul>
                         <li>
                             <strong>Samsung Galaxy S25 Ultra</strong>
-                            <span>Main Device, One UI 8(Android 16)</span>
+                            <span>Main Device One UI 8(Android 16)</span>
                         </li>
                         <li>
                             <strong>Pixel 6a</strong>
-                            <span>Stock (SUSFS Kernel + KSUNext), GSI test Android 16</span>
+                            <span>Sub Device, Android 16(Evolution X + KernelSU Next)</span>
                         </li>
                         <li>
-                            <strong>iPhone XS</strong>
-                            <span>for Apps that Exclusive on iOS, iOS18(non-jailbroken)</span>
+                            <strong>PC</strong>
+                            <br>
+                            <strong>Lenovo ThinkPad T14 Gen 5 (AMD)</strong>
+                            <br>
+                            <span>CPU: AMD Ryzen 7 8840U</span>
+                            <span>RAM: 32GB DDR5-5600</span>
+                            <span>GPU: AMD Radeon 780M(Integrated)</span>
+                            <span>Storage: 512GB SSD</span>
+                            <span>OS: Arch Linux</span>
+                            <br>
+                            <strong>ASUS TUF Gaming A15 (FA507)</strong>
+                            <br>
+                            <span>CPU: AMD Ryzen 7 6800H</span>
+                            <span>RAM: 16GB DDR5-4800</span>
+                            <span>GPU: NVIDIA GeForce RTX 3050 Laptop(Dedicated)</span>
+                            <span>Storage: 512GB SSD</span>
+                            <span>OS: Windows 11 Pro 25H2 with ReviOS</span>
                         </li>
                     </ul>
                 </div>
-
                 <div class="card">
                     <h3>Gallery (Click to expand)</h3>
                     <div class="gallery-grid">
@@ -325,10 +370,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-
         <nav class="nav-links">
             <a href="jp/index.html" class="btn">🇯🇵 日本語</a>
             <a href="https://flatponch.xyz/database" class="btn">Database</a>
@@ -336,7 +379,6 @@
             <a href="https://flatponch.xyz/contact" class="btn">Contact</a>
             <a href="https://github.com/FlatPonch/flatponch.github.io" target="_blank" class="btn">GitHub Repo</a>
         </nav>
-
         <footer>
             <p>© 2026 FlatPonch All Rights Reserved.</p>
             <p>Credits: <a href="https://amafuka.com/">Sora Amagiri</a> (Design Inspiration)</p>
@@ -345,20 +387,6 @@
             <p>some codes are generated by <a href="https://gemini.google.com">Google Gemini</a></p>
         </footer>
     </div>
-    </body>
-<!--
-   ____                 _ _                  ____   ___ ____  ____  
-  / ___| ___   ___   __| | |__  _   _  ___  |___ \ / _ \___ \| ___| 
- | |  _ / _ \ / _ \ / _` | '_ \| | | |/ _ \   __) | | | |__) |___ \ 
- | |_| | (_) | (_) | (_| | |_) | |_| |  __/  / __/| |_| / __/ ___) |
-  \____|\___/ \___/ \__,_|_.__/ \__, |\___| |_____|\___/_____|____/  ,
-                                |___/                               
+</body>
 
-     _   _      _ _           ____   ___ ____   __   
-    | | | | ___| | | ___     |___ \ / _ \___ \ / /_  
-    | |_| |/ _ \ | |/ _ \      __) | | | |__) | '_ \ 
-    |  _  |  __/ | | (_) |    / __/| |_| / __/| (_) |
-    |_| |_|\___|_|_|\___/    |_____|\___/_____|\___/ .
-    
-    2026年もよろしくお願いします! by FlatPonch 
---></html>
+</html>
