@@ -1,13 +1,19 @@
-# FlatPonch's some Links
+# CachyToki's some Links
 
-[Self Promotion: monochrome, Project.](https://mncrp.thinking-grp.org)
+## Self Promotion
+[monochrome, Project.](https://mncrp.thinking-grp.org)
 
-[GitHub](https://github.com/FlatPonch)
+## Social Media
+[GitHub](https://github.com/CachyToki)
 
-[Bluesky](https://bsky.app/profile/flatponch.xyz)
+[Twitter](https://twitter.com/CachyToki3655)
 
-[Instagram](https://instagram.com/flatponch)
+[Instagram](https://instagram.com/cachytoki)
 
-[YouTube](https://youtube.com/@FlatPonch)
+[YouTube](https://youtube.com/@CachyToki)
 
-[Steam](https://steamcommunity.com/id/FlatPonch)
+[Steam](https://steamcommunity.com/id/TokiCachy)
+
+[Pixiv](https://www.pixiv.net/users/87913371)
+
+[]
